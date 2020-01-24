@@ -8,6 +8,8 @@
     ~/.gitconfig:
     ~/.gitignore_global:
     ~/.ssh/config: ssh/config
-    ~/.zshrc
+    ~/.shell:
+    ~/.zsh:
+    ~/.zshrc:
 - shell:
     - [git submodule sync --recursive, Synchronizing submodules]
