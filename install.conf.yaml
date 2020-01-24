@@ -4,6 +4,7 @@
       relink: true
 
 - clean: ['~']
+
 - link:
     ~/.gitconfig:
     ~/.gitignore_global:
@@ -11,5 +12,18 @@
     ~/.shell:
     ~/.zsh:
     ~/.zshrc:
+
+- vscode:
+    file: Vscodefile
+    insiders: false
+
+- brewfile:
+    - Brewfile
+
 - shell:
     - [git submodule sync --recursive, Synchronizing submodules]
+    - [git update-submodules, Updating submodules]
+    - >
+        git cleanall -f
+        shell/plugins/
+        zsh/plugins/
