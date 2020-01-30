@@ -2,8 +2,6 @@
     link:
       create: true
       relink: true
-    shell:
-      stderr: true
 
 - clean: ['~', '~/.ohmyzsh/custom/', '~/.ohmyzsh/custom/plugins/', '~/.ohmyzsh/custom/themes/']
     

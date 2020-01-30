@@ -6,8 +6,6 @@ source "$ZSH/oh-my-zsh.sh"
 
 # Syntax highlighting
 
-# source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
 if [[ "$(tput colors)" == "256" ]]; then
