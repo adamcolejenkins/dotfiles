@@ -29,6 +29,7 @@
     insiders: false
     
 - shell:
+    - [sh fonts/install.sh, Installing Powerline fonts]
     - [git submodule sync --recursive, Synchronizing submodules]
     - [git update-submodules, Updating submodules]
     - [
