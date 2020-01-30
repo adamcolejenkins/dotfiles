@@ -26,9 +26,6 @@ setopt extendedhistory
 # Time to wait for additional characters in a sequence
 KEYTIMEOUT=1 # corresponds to 10ms
 
-# Use VSCode as the editor
-export EDITOR=code
-
 # Use vim style line editing in zsh
 bindkey -v
 # Movement
@@ -48,3 +45,13 @@ bindkey "^R" history-incremental-search-backward
 
 # Disable shell builtins
 disable r
+
+# Set the name of the theme to load
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
+
+# Which plugins would you like to load? (plugins can be found in ~/.ohmyzsh/plugins/*)
+# Custom plugins may be added to ~/.ohmyzsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git zsh-completions zsh-syntax-highlighting)

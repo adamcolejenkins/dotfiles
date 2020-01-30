@@ -1,4 +1,14 @@
+Host github.com
+    User git
+    HostName github.com
+    UseKeychain yes
+    IdentityFile ~/.ssh/Github
+
+Host blackbox
+    HostName blackbox.frecklebit.com
+    Port 3022
+    User ajenkins
+    IdentityFile ~/.ssh/id_rsa_blackbox
+
 Host *
-  AddKeysToAgent yes
-  UseKeychain yes
-  IdentityFile ~/.ssh/id_rsa
+    Compression yes

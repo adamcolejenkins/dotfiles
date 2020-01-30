@@ -2,28 +2,40 @@
     link:
       create: true
       relink: true
+    shell:
+      stderr: true
 
-- clean: ['~']
-
+- clean: ['~', '~/.ohmyzsh/custom/', '~/.ohmyzsh/custom/plugins/', '~/.ohmyzsh/custom/themes/']
+    
 - link:
     ~/.gitconfig:
     ~/.gitignore_global:
     ~/.ssh/config: ssh/config
+    ~/.ohmyzsh:
+    ~/.ohmyzsh/custom/themes:
+        force: true
+        path: zsh/themes/
+    ~/.ohmyzsh/custom/plugins:
+        force: true
+        path: zsh/plugins
     ~/.shell:
     ~/.zsh:
+    ~/.zshenv:
     ~/.zshrc:
-
-- vscode:
-    file: Vscodefile
-    insiders: false
 
 - brewfile:
     - Brewfile
 
+- vscodefile:
+    file: VSCodefile
+    insiders: false
+    
 - shell:
     - [git submodule sync --recursive, Synchronizing submodules]
     - [git update-submodules, Updating submodules]
-    - >
+    - [
         git cleanall -f
         shell/plugins/
         zsh/plugins/
+    , Cleansing submodules]
+    - [date > ~/.dotfiles_update, Logging last update]

@@ -1,8 +1,12 @@
 # External plugins (initialized after)
 
+# Oh My ZSH
+
+source "$ZSH/oh-my-zsh.sh"
+
 # Syntax highlighting
 
-source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
@@ -30,8 +34,3 @@ if [[ "$(tput colors)" == "256" ]]; then
     ZSH_HIGHLIGHT_STYLES[assign]=fg=037
 fi
 
-# dircolors
-
-if [[ "$(tput colors)" == "256" ]]; then
-    eval $(dircolors =(cat ~/.shell/plugins/dircolors-solarized/dircolors.256dark ~/.shell/dircolors.extra))
-fi
