@@ -47,11 +47,13 @@ bindkey "^R" history-incremental-search-backward
 disable r
 
 # Set the name of the theme to load
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="af-magic"
+ZSH_THEME="spaceship-prompt/spaceship"
+
+# Would you like to use another custom folder than $ZSH/custom?
+ZSH_CUSTOM="$HOME/.ohmyzsh-custom"
 
 # Which plugins would you like to load? (plugins can be found in ~/.ohmyzsh/plugins/*)
 # Custom plugins may be added to ~/.ohmyzsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-completions zsh-syntax-highlighting)
+plugins=(git git-flow node npm zsh-completions zsh-syntax-highlighting)

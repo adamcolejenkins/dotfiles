@@ -3,19 +3,15 @@
       create: true
       relink: true
 
-- clean: ['~', '~/.ohmyzsh/custom/', '~/.ohmyzsh/custom/plugins/', '~/.ohmyzsh/custom/themes/']
+- clean: ['~', '~/.ohmyzsh-custom']
     
 - link:
     ~/.gitconfig:
     ~/.gitignore_global:
     ~/.ssh/config: ssh/config
     ~/.ohmyzsh:
-    ~/.ohmyzsh/custom/themes:
-        force: true
-        path: zsh/themes/
-    ~/.ohmyzsh/custom/plugins:
-        force: true
-        path: zsh/plugins
+    ~/.ohmyzsh-custom/plugins: zsh/plugins/
+    ~/.ohmyzsh-custom/themes: zsh/themes/
     ~/.shell:
     ~/.zsh:
     ~/.zshenv:

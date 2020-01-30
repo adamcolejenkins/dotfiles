@@ -12,6 +12,10 @@ path_prepend() {
     PATH="$1${PATH:+":$PATH"}"
 }
 
+c() {
+    cd $PROJECTS/$1
+}
+
 here() {
     local loc
     if [ "$#" -eq 1 ]; then
