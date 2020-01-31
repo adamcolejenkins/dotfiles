@@ -4,6 +4,9 @@
       relink: true
 
 - clean: ['~', '~/.ohmyzsh-custom']
+
+- shell:
+    - [brewfile, Updating Brewfile]
     
 - link:
     ~/.gitconfig:

@@ -28,3 +28,7 @@ here() {
 }
 
 there="$HOME/.shell.here"
+
+brewfile() {
+    brew bundle dump --force --describe --file="$DOT/Brewfile"
+}
