@@ -1,11 +1,9 @@
 # External plugins (initialized after)
 
 # Oh My ZSH
-
 source "$ZSH/oh-my-zsh.sh"
 
 # Syntax highlighting
-
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
 if [[ "$(tput colors)" == "256" ]]; then
