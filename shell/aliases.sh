@@ -14,6 +14,9 @@ alias mv='mv -i'
 # git related aliases
 alias gag='git exec ag'
 
+# Tree alias
+alias tree='tree -aC --dirsfirst'
+
 # Update dotfiles
 dfu() {
     (
