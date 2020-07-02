@@ -2,7 +2,7 @@ Host github.com
     User git
     HostName github.com
     UseKeychain yes
-    IdentityFile ~/.ssh/Github
+    IdentityFile ~/.ssh/github_rsa
 
 Host blackbox
     HostName blackbox.frecklebit.com
@@ -10,5 +10,7 @@ Host blackbox
     User ajenkins
     IdentityFile ~/.ssh/id_rsa_blackbox
 
-Host *
-    Compression yes
+Host router
+    Hostname 10.10.0.1
+    Port 3022
+    User admin
