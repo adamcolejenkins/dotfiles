@@ -11,11 +11,34 @@ alias l='ls'
 alias cp='cp -i'
 alias mv='mv -i'
 
-# git related aliases
-alias gag='git exec ag'
-
 # Tree alias
 alias tree='tree -aC --dirsfirst'
+
+# Reload ZSH
+alias reload!='. ~/.zshrc'
+
+# cd to git root directory
+alias cdgr='cd "$(git root)"'
+
+# Mirror a website
+alias mirrorsite='wget -m -k -K -E -e robots=off'
+
+# Mirror stdout to stderr, useful for seeing data going through a pipe
+alias peek='tee >(cat 1>&2)'
+
+# Alias hub as git
+eval "$(hub alias -s)"
+
+# git related aliases
+alias gag='git exec ag'
+alias gl='git pull --prune'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gcb='git copy-branch-name'
+alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+alias gac='git add -A && git commit -m'
+
+# Remove `+` and `-` from start of diff lines; just rely upon color.
+alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
 
 # Shortcut to dotfiles
 dot() {
@@ -41,12 +64,6 @@ syspip2() {
 syspip3() {
     PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
 }
-
-# cd to git root directory
-alias cdgr='cd "$(git root)"'
-
-# Alias hub as git
-eval "$(hub alias -s)"
 
 # Create a directory and cd into it
 mcd() {
@@ -135,9 +152,3 @@ fpr() {
 serve() {
     ruby -run -e httpd . -p "${1:-8080}"
 }
-
-# Mirror a website
-alias mirrorsite='wget -m -k -K -E -e robots=off'
-
-# Mirror stdout to stderr, useful for seeing data going through a pipe
-alias peek='tee >(cat 1>&2)'
