@@ -56,4 +56,5 @@ ZSH_CUSTOM="$HOME/.ohmyzsh-custom"
 # Custom plugins may be added to ~/.ohmyzsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow node npm zsh-completions zsh-syntax-highlighting)
+plugins=(git git-flow node npm zsh-completions zsh-syntax-highlighting zsh-nvm)
+
