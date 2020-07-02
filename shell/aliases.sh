@@ -17,6 +17,11 @@ alias gag='git exec ag'
 # Tree alias
 alias tree='tree -aC --dirsfirst'
 
+# Shortcut to dotfiles
+dot() {
+    cd ~/.dotfiles/$1
+}
+
 # Update dotfiles
 dfu() {
     (
