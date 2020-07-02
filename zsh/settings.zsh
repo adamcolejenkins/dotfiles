@@ -54,3 +54,9 @@ ZSH_THEME="spaceship-prompt/spaceship"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git git-flow node npm zsh-completions zsh-syntax-highlighting zsh-nvm)
+
+# NVM Completion
+export NVM_COMPLETION=true
+
+# NVM auto use
+export NVM_AUTO_USE=true
