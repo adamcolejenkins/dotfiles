@@ -82,9 +82,6 @@
 	defaultToUpstream = true
 	tool = vimdiff
 
-[pull]
-	ff = only
-
 [mergetool]
 	keepBackup = false
 
@@ -122,3 +119,5 @@
 	required = true
 [hub]
 	protocol = https
+[pull]
+	rebase = false
