@@ -60,3 +60,6 @@ export NVM_COMPLETION=true
 
 # NVM auto use
 export NVM_AUTO_USE=true
+
+# Force AWSCLI to not start up less
+export PAGER=cat
