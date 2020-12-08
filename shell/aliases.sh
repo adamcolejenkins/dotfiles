@@ -40,6 +40,9 @@ alias gac='git add -A && git commit -m'
 # Remove `+` and `-` from start of diff lines; just rely upon color.
 alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
 
+# Shortcut for obtaining public IP
+myip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
+
 # Shortcut to dotfiles
 dot() {
     cd ~/.dotfiles/$1
