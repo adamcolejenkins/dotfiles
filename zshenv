@@ -9,3 +9,7 @@ export VEDITOR='code'
 
 # Set our Code preset
 export PROJECTS="$HOME/src"
+
+# Zoro config
+export WORKING_DIR="$PROJECTS"
+export DOCKER_VM_ENV="$HOME/docker_vm.env"
