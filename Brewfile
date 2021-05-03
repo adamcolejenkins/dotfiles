@@ -30,11 +30,8 @@ brew "tree"
 brew "wget"
 # JavaScript package manager
 brew "yarn"
-cask "adobe-creative-cloud"
-cask "choosy"
 cask "github"
-cask "gitkraken"
 cask "iterm2"
 cask "postman"
-cask "setapp"
-cask "sketch"
+cask "1password"
+
