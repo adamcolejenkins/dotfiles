@@ -155,3 +155,17 @@ fpr() {
 serve() {
     ruby -run -e httpd . -p "${1:-8080}"
 }
+
+
+# Zoro
+alias zfl="zoro frontend-logs"
+alias zfr="zoro frontend-restart"
+alias zfb="zoro frontend-bash"
+alias zf="zoro frontend-restart && zoro frontend-logs"
+alias zbl="zoro backend-logs"
+alias zbr="zoro backend-restart"
+alias zbb="zoro backend-bash"
+alias zbt="zoro backend-test"
+alias zb="zoro backend-restart && zoro backend-logs"
+alias zr="zoro destroy && zoro up && zfl"
+

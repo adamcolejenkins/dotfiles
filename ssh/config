@@ -3,14 +3,3 @@ Host github.com
     HostName github.com
     UseKeychain yes
     IdentityFile ~/.ssh/github_rsa
-
-Host blackbox
-    HostName blackbox.frecklebit.com
-    Port 3022
-    User ajenkins
-    IdentityFile ~/.ssh/id_rsa_blackbox
-
-Host router
-    Hostname 10.10.0.1
-    Port 3022
-    User admin

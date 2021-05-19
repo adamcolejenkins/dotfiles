@@ -47,7 +47,7 @@ bindkey "^R" history-incremental-search-backward
 disable r
 
 # Set the name of the theme to load
-ZSH_THEME="spaceship-prompt/spaceship"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Which plugins would you like to load? (plugins can be found in ~/.ohmyzsh/plugins/*)
 # Custom plugins may be added to ~/.ohmyzsh/custom/plugins/
@@ -63,3 +63,8 @@ export NVM_AUTO_USE=true
 
 # Force AWSCLI to not start up less
 export PAGER=cat
+
+# Zoro
+export WORKING_DIR=$PROJECTS
+export DOCKER_VM_ENV=$HOME/docker_vm.env
+
